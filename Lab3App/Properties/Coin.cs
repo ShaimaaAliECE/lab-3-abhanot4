@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 public class Coin : Treasure {
 
-     public int Value { get; private set; }
+    public int Value { get; private set; }
 
-    public Coin(string description, int score, int value, CollectionBoard board) : base(descripton, score, board)
+    public Coin(string description, int score, int value, CollectionBoard board) : base(description, score, board)
     {
         Value = value;
     }
     public override void Display() {
-        Console.WriteLine($"Coin {Description} is displayed")
+        Console.WriteLine($"Coin {Description} is displayed");
     }
     public override void AddMe(List<Collectable> list) {
         base.AddMe(list);

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Tool : Collectable {
+public abstract class Tool : Collectable {
     
-    public Tool(string description, CollectionBoard board) : base(description, board) {
+    protected Tool(string description, CollectionBoard board) : base(description, board) {
     }
 
-    public abstract void DoAction();
+    public abstract override void DoAction();
 
 
 }

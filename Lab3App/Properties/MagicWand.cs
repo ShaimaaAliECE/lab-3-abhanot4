@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 public class MagicWand : Tool {
 
-    public MagicWand(String description, CollectionBoard board) : base(description, board) {}
+    public MagicWand(string description, CollectionBoard board) : base(description, board) {}
     
-    public void override Display() {
+    public override void Display() {
         Console.WriteLine($"MagicWand {Description} is displayed");
     }
 
-    public void DoAction() {
-        Console.WriteLine("MagiceWand is Used");
+    public override void DoAction() {
+        Console.WriteLine("MagicWand is Used");
     }
 }
