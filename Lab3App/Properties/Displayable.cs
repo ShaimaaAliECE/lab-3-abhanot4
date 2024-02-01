@@ -5,6 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 public interface Displayable
-{
-    void Display();
-}
+    {
+        void Display();
+    }

@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Axe : Tool {
+  public class Axe : Tool
+    {
+        public Axe(string description, CollectionBoard board) : base(description, board) { }
 
-    public Axe(string description, CollectionBoard board) : base(description, board) {
-    }
+        public override void Display()
+        {
+            Console.WriteLine("Axe " + Description + " is displayed");
+        }
 
-    public override void Display() {
-        Console.WriteLine($"Axe {Description} is displayed");
+        public override void DoAction()
+        {
+            Console.WriteLine("Axe is Used");
+        }
     }
-
-    public override void doAction(){
-        Console.WriteLine("Axe is Used");
-    }
-}

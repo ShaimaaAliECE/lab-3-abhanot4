@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{F8D03A7A-BFDF-4CDB-8840-ACC9EA70E485}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/Axe.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/AssemblyInfo.cs">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
       <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
       <File FileName="Properties/Axe.cs" Line="1" Column="1" />
+      <File FileName="Properties/Coin.cs" Line="1" Column="1" />
+      <File FileName="Properties/Collectable.cs" Line="1" Column="1" />
+      <File FileName="Properties/CollectionBoard.cs" Line="1" Column="1" />
+      <File FileName="Properties/Diamond.cs" Line="1" Column="1" />
+      <File FileName="Properties/Displayable.cs" Line="1" Column="1" />
+      <File FileName="Properties/MagicWand.cs" Line="1" Column="1" />
+      <File FileName="Properties/Tool.cs" Line="1" Column="1" />
+      <File FileName="Properties/Treasure.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab3App" expanded="True">
             <Node name="Lab3App" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Axe.cs" selected="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="AssemblyInfo.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
