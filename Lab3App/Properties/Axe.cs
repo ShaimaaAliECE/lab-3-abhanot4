@@ -9,7 +9,7 @@ public class Axe : Tool {
     public Axe(string description, CollectionBoard board) : base(description, board) {
     }
 
-    public void override Display() {
+    public override void Display() {
         Console.WriteLine($"Axe {Description} is displayed");
     }
 
