@@ -9,8 +9,7 @@ public class Tool : Collectable {
     public Tool(string description, CollectionBoard board) : base(description, board) {
     }
 
-    public override void AddMe(List<Collectable> list) {
-        base.AddMe(list);
-    }
+    public abstract void DoAction();
+
 
 }

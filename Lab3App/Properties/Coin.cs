@@ -8,8 +8,7 @@ public class Coin : Treasure {
 
      public int Value { get; private set; }
 
-    public Coin(string description, CollectionBoard board, int value) 
-        : base(description, board)
+    public Coin(string description, int score, int value, CollectionBoard board) : base(descripton, score, board)
     {
         Value = value;
     }
@@ -18,7 +17,7 @@ public class Coin : Treasure {
     }
     public override void AddMe(List<Collectable> list) {
         base.AddMe(list);
-        Board.UpdateTotalValue(this.Value);
+        Board.UpdateTotalValue(Value);
     }
 
 }

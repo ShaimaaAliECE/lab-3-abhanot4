@@ -4,12 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Treasure : Collectable {
+public abstract class Treasure : Collectable {
 
 
     public override void AddMe(List<Collectable> list)
     {
         base.AddMe(list);
-        Board.UpdateTotalScore(this.Score);
+        Board.UpdateTotalScore(Score);
+    }
+
+    public int Score { get; protected set; }
+
+    protected Treasure(string description, int score, CollectionBoard board) : base(description, board)
+    {
+        Score = score;
     }
 }
