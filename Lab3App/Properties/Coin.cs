@@ -13,16 +13,12 @@ public class Coin : Treasure {
     {
         Value = value;
     }
-
-    public void updateValue (int value) {
-        TotalValue += value;
-    }
-
     public override void Display() {
         Console.WriteLine($"Coin {Description} is displayed")
     }
     public override void AddMe(List<Collectable> list) {
         base.AddMe(list);
+        Board.UpdateTotalValue(this.Value);
     }
 
 }
